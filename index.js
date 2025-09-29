@@ -9,6 +9,7 @@ server.use(router);
 
 server.listen(port); */
 const jsonServer = require("json-server");
+const cors = require("cors");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
@@ -19,7 +20,7 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 8080; 
 const host = '0.0.0.0'; 
 // -------------------------------------------------
-
+server.use(cors()); // Esto permite TODAS las peticiones (incluyendo localhost:4200)
 server.use(middlewares);
 server.use(router);
 
