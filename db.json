@@ -2486,6 +2486,23 @@
       "description": "Venezuela"
     }
   ],
+    "provinces": [
+    {
+      "id": 1,
+      "countryId": 1,
+      "description": "Buenos Aires"
+    },
+    {
+      "id": 2,
+      "countryId": 1,
+      "description": "Córdoba"
+    },
+    {
+      "id": 3,
+      "countryId": 2,
+      "description": "La Paz"
+    }
+  ],
   "users": [
     {
       "id": 1,
